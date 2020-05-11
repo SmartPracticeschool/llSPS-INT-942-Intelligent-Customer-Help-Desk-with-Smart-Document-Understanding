@@ -1,0 +1,15 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: noderedhhzbi
+  buildpack: sdk-for-nodejs
+  command: npm start
+  disk_quota: 1G
+  memory: 192MB
+  domain: eu-gb.mybluemix.net
+  host: node-red-hhzbi
+  services:
+    - node-red-hhzbi-cloudant-1589012038740-35133
+  env:
+    OPTIMIZE_MEMORY: true
