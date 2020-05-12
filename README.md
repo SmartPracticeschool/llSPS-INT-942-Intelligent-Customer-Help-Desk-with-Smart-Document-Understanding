@@ -19,4 +19,4 @@ https://youtu.be/3ZL_BuPTXZ0
 
 Node_Red Dasboard link after deploying : https://node-red-hhzbi.eu-gb.mybluemix.net/ui
 
-Have a casual talks like hello,hye,good morning,etc,for(SDU) like how to set time,how to turn on heater,how to access setting only.
+Have a casual talks like hello,bye,good morning,etc,for(SDU) like how to set time,how to turn on heater,how to access setting only.
