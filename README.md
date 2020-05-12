@@ -16,3 +16,4 @@ Build a web application with integration to all these services & deploy the same
 
 I have uploaded a demo video of this project in my youtube channel.
 https://youtu.be/3ZL_BuPTXZ0
+Node_Red Dasboard link after deploying : https://node-red-hhzbi.eu-gb.mybluemix.net/ui
