@@ -14,7 +14,7 @@ Use Smart Document Understanding to build an enhanced Watson Discovery collectio
 Create an IBM Cloud Functions web action that allows Watson Assistant to post queries to Watson Discovery
 Build a web application with integration to all these services & deploy the same on IBM Cloud Platform
 
-In Watson Discovery have added ecobee3_userguide. 
+In Watson Discovery I have added ecobee3_userguide. 
 
 I have uploaded a demo video of this project in my youtube channel.
 https://youtu.be/3ZL_BuPTXZ0
