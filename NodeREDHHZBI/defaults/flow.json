@@ -1,1 +1,203 @@
-[{"id":"7253a121.16642","type":"tab","label":"Flow 1","disabled":false,"info":""},{"id":"b1b11140.4e4ef","type":"inject","z":"7253a121.16642","name":"","topic":"","payload":"Hello Node-RED!","payloadType":"str","repeat":"","crontab":"","once":false,"onceDelay":"","x":141,"y":61,"wires":[["2371449b.4bf2cc"]]},{"id":"f2f2649a.0d0d98","type":"debug","z":"7253a121.16642","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","x":670,"y":140,"wires":[]},{"id":"e150cc25.d7aa","type":"function","z":"7253a121.16642","name":"input parsing","func":"msg.payload=msg.payload.text;\nreturn msg;","outputs":1,"noerr":0,"x":279,"y":242,"wires":[["49234419.64d55c","2371449b.4bf2cc"]]},{"id":"d3215cca.6b835","type":"ui_form","z":"7253a121.16642","name":"","label":"","group":"528b62f3.5c783c","order":0,"width":0,"height":0,"options":[{"label":"Enter your query","value":"text","type":"text","required":true,"rows":null}],"formValue":{"text":""},"payload":"","submit":"submit","cancel":"cancel","topic":"","x":107.5,"y":302,"wires":[["e150cc25.d7aa"]]},{"id":"49234419.64d55c","type":"ui_text","z":"7253a121.16642","group":"528b62f3.5c783c","order":1,"width":0,"height":0,"name":"","label":"You","format":"{{msg.payload}}","layout":"row-spread","x":453.5,"y":306,"wires":[]},{"id":"d2a61bef.00f978","type":"ui_text","z":"7253a121.16642","group":"528b62f3.5c783c","order":2,"width":0,"height":0,"name":"","label":"Bot","format":"{{msg.payload}}","layout":"row-spread","x":688.5,"y":237,"wires":[]},{"id":"29aac8ee.b98c68","type":"function","z":"7253a121.16642","name":"parsing","func":"msg.payload = msg.payload.output.generic[0].text;\nreturn msg;","outputs":1,"noerr":0,"x":470,"y":160,"wires":[["f2f2649a.0d0d98","d2a61bef.00f978"]]},{"id":"2371449b.4bf2cc","type":"watson-assistant-v2","z":"7253a121.16642","name":"My first assistant","service-endpoint":"","assistant_id":"d3fa58b9-7946-4784-b120-5e025c58c9ba","debug":false,"restart":false,"return_context":true,"alternate_intents":false,"multisession":true,"timeout":"","optout-learning":false,"x":391.5,"y":100,"wires":[["29aac8ee.b98c68","caf5ac15.c978d"]]},{"id":"caf5ac15.c978d","type":"debug","z":"7253a121.16642","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","x":557.5,"y":61,"wires":[]},{"id":"528b62f3.5c783c","type":"ui_group","z":"","name":"Customer Help Desk","tab":"27e055be.28bb7a","order":1,"disp":true,"width":"6","collapse":false},{"id":"27e055be.28bb7a","type":"ui_tab","z":"","name":"Product","icon":"dashboard","order":1,"disabled":false,"hidden":false}]
+[
+    {
+        "id": "7253a121.16642",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b1b11140.4e4ef",
+        "type": "inject",
+        "z": "7253a121.16642",
+        "name": "",
+        "topic": "",
+        "payload": "Hello Node-RED!",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 141,
+        "y": 61,
+        "wires": [
+            [
+                "2371449b.4bf2cc"
+            ]
+        ]
+    },
+    {
+        "id": "f2f2649a.0d0d98",
+        "type": "debug",
+        "z": "7253a121.16642",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 670,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e150cc25.d7aa",
+        "type": "function",
+        "z": "7253a121.16642",
+        "name": "input parsing",
+        "func": "msg.payload=msg.payload.text;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 240,
+        "wires": [
+            [
+                "2371449b.4bf2cc",
+                "49234419.64d55c"
+            ]
+        ]
+    },
+    {
+        "id": "d3215cca.6b835",
+        "type": "ui_form",
+        "z": "7253a121.16642",
+        "name": "",
+        "label": "",
+        "group": "528b62f3.5c783c",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "options": [
+            {
+                "label": "Enter your query",
+                "value": "text",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "text": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "x": 107.5,
+        "y": 302,
+        "wires": [
+            [
+                "e150cc25.d7aa"
+            ]
+        ]
+    },
+    {
+        "id": "49234419.64d55c",
+        "type": "ui_text",
+        "z": "7253a121.16642",
+        "group": "528b62f3.5c783c",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "You",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 453.5,
+        "y": 306,
+        "wires": []
+    },
+    {
+        "id": "d2a61bef.00f978",
+        "type": "ui_text",
+        "z": "7253a121.16642",
+        "group": "528b62f3.5c783c",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Bot",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 688.5,
+        "y": 237,
+        "wires": []
+    },
+    {
+        "id": "29aac8ee.b98c68",
+        "type": "function",
+        "z": "7253a121.16642",
+        "name": "parsing",
+        "func": "msg.payload = msg.payload.output.generic[0].text;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 470,
+        "y": 160,
+        "wires": [
+            [
+                "f2f2649a.0d0d98",
+                "d2a61bef.00f978"
+            ]
+        ]
+    },
+    {
+        "id": "2371449b.4bf2cc",
+        "type": "watson-assistant-v2",
+        "z": "7253a121.16642",
+        "name": "My first assistant",
+        "service-endpoint": "https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/ae44476e-77ab-4578-9d11-23464ea66634",
+        "assistant_id": "d3fa58b9-7946-4784-b120-5e025c58c9ba",
+        "debug": false,
+        "restart": false,
+        "return_context": true,
+        "alternate_intents": false,
+        "multisession": true,
+        "timeout": "",
+        "optout-learning": false,
+        "x": 391.5,
+        "y": 100,
+        "wires": [
+            [
+                "29aac8ee.b98c68",
+                "caf5ac15.c978d"
+            ]
+        ]
+    },
+    {
+        "id": "caf5ac15.c978d",
+        "type": "debug",
+        "z": "7253a121.16642",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 557.5,
+        "y": 61,
+        "wires": []
+    },
+    {
+        "id": "528b62f3.5c783c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Customer Help Desk",
+        "tab": "27e055be.28bb7a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "27e055be.28bb7a",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Product",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
