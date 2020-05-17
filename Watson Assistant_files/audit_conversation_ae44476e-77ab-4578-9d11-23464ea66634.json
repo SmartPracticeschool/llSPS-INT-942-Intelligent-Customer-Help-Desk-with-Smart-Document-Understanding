@@ -1,0 +1,659 @@
+{
+  "report": {
+    "docType": "iam.identity-access-map",
+    "version": "1.0.0",
+    "createdById": "IBMid-5500073VNW",
+    "date": "2020-05-17T12:53:07.150Z",
+    "fullReport": true,
+    "displayName": "UTTAM SHARMA",
+    "contact": "uttamsharma231@gmail.com"
+  },
+  "responses": [
+    {
+      "resource": {
+        "crn": "crn:v1:bluemix:public:conversation:eu-gb:a/4e8366bc9ec54fc28de4b488e1f35f89:ae44476e-77ab-4578-9d11-23464ea66634::",
+        "displayName": "Watson Assistant-de",
+        "serviceName": "conversation",
+        "resourceGroupId": "8fc296bad0d344a6887795c557198ac2",
+        "resourceGroupName": "Default"
+      },
+      "access": [
+        {
+          "subject": {
+            "serviceId": {
+              "id": "iam-ServiceId-0d57e6b0-d04e-409a-8b1d-9e6f0b1f7f1e",
+              "displayName": "Auto-generated service credentials"
+            }
+          },
+          "roleActions": [
+            {
+              "role": {
+                "crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                "displayName": "Manager",
+                "description": "As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources."
+              },
+              "actions": [
+                {
+                  "action": "POST /conversation",
+                  "displayName": "POST",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.skill.read",
+                  "displayName": "Can open and view a skill.",
+                  "description": "Can open and view a skill."
+                },
+                {
+                  "action": "conversation.assistant.write",
+                  "displayName": "Can rename, edit, or delete an assistant.",
+                  "description": "Can rename, edit, or delete an assistant."
+                },
+                {
+                  "action": "PUT /conversation",
+                  "displayName": "PUT",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.assistant.default",
+                  "displayName": "Default access for Assistant",
+                  "description": "Default access for Assistant"
+                },
+                {
+                  "action": "PATCH /conversation",
+                  "displayName": "PATCH",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.assistant.list",
+                  "displayName": "Can list assistant or skill",
+                  "description": "Can list assistant or skill"
+                },
+                {
+                  "action": "conversation.assistant.legacy",
+                  "displayName": "Can perform authoring methods for a workspace through v1 APIs.",
+                  "description": "Can perform authoring methods for a workspace through v1 APIs."
+                },
+                {
+                  "action": "conversation.logs.read",
+                  "displayName": "Can view skill analytics and access user conversation logs.",
+                  "description": "Can view skill analytics and access user conversation logs."
+                },
+                {
+                  "action": "GET /conversation",
+                  "displayName": "GET",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.skill.write",
+                  "displayName": "Can rename, edit, or delete a skill.",
+                  "description": "Can rename, edit, or delete a skill."
+                },
+                {
+                  "action": "DELETE /conversation",
+                  "displayName": "DELETE",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.assistant.read",
+                  "displayName": "Can open and view an assistant.",
+                  "description": "Can open and view an assistant."
+                }
+              ],
+              "policyIds": [
+                "https://cloud.ibm.com/iam/serviceids/ServiceId-0d57e6b0-d04e-409a-8b1d-9e6f0b1f7f1e/policies/461988bd-d29f-496a-b248-24077659bb08"
+              ]
+            }
+          ],
+          "platformExtensions": {
+            "roleActions": [
+              {
+                "role": {
+                  "crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                  "displayName": "Manager",
+                  "description": "As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources."
+                },
+                "actions": [
+                  {
+                    "action": "global-search-tagging.resource.read",
+                    "displayName": "Find cloud resources",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.read",
+                    "displayName": "IAM Policy Read",
+                    "description": "The ability to see policies."
+                  }
+                ],
+                "policyIds": [
+                  "https://cloud.ibm.com/iam/serviceids/ServiceId-0d57e6b0-d04e-409a-8b1d-9e6f0b1f7f1e/policies/461988bd-d29f-496a-b248-24077659bb08"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "subject": {
+            "serviceId": {
+              "id": "iam-ServiceId-ca92f6e2-4043-42f9-894b-5b36b59cb0ac",
+              "displayName": "fff7b289-0383-42a5-b55a-414e9a9f66ae"
+            }
+          },
+          "roleActions": [
+            {
+              "role": {
+                "crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+                "displayName": "Writer",
+                "description": "As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources."
+              },
+              "actions": [
+                {
+                  "action": "POST /conversation",
+                  "displayName": "POST",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.skill.read",
+                  "displayName": "Can open and view a skill.",
+                  "description": "Can open and view a skill."
+                },
+                {
+                  "action": "PATCH /conversation",
+                  "displayName": "PATCH",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.assistant.list",
+                  "displayName": "Can list assistant or skill",
+                  "description": "Can list assistant or skill"
+                },
+                {
+                  "action": "conversation.assistant.write",
+                  "displayName": "Can rename, edit, or delete an assistant.",
+                  "description": "Can rename, edit, or delete an assistant."
+                },
+                {
+                  "action": "GET /conversation",
+                  "displayName": "GET",
+                  "description": ""
+                },
+                {
+                  "action": "PUT /conversation",
+                  "displayName": "PUT",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.assistant.default",
+                  "displayName": "Default access for Assistant",
+                  "description": "Default access for Assistant"
+                },
+                {
+                  "action": "conversation.skill.write",
+                  "displayName": "Can rename, edit, or delete a skill.",
+                  "description": "Can rename, edit, or delete a skill."
+                },
+                {
+                  "action": "DELETE /conversation",
+                  "displayName": "DELETE",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.assistant.read",
+                  "displayName": "Can open and view an assistant.",
+                  "description": "Can open and view an assistant."
+                }
+              ],
+              "policyIds": [
+                "https://cloud.ibm.com/iam/serviceids/ServiceId-ca92f6e2-4043-42f9-894b-5b36b59cb0ac/policies/26700b6c-96bb-4be4-9076-12d948699087"
+              ]
+            }
+          ],
+          "platformExtensions": {
+            "roleActions": [
+              {
+                "role": {
+                  "crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+                  "displayName": "Writer",
+                  "description": "As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources."
+                },
+                "actions": [
+                  {
+                    "action": "global-search-tagging.resource.read",
+                    "displayName": "Find cloud resources",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.read",
+                    "displayName": "IAM Policy Read",
+                    "description": "The ability to see policies."
+                  }
+                ],
+                "policyIds": [
+                  "https://cloud.ibm.com/iam/serviceids/ServiceId-ca92f6e2-4043-42f9-894b-5b36b59cb0ac/policies/26700b6c-96bb-4be4-9076-12d948699087"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "subject": {
+            "user": {
+              "id": "IBMid-5500073VNW",
+              "displayName": "UTTAM SHARMA",
+              "contact": "uttamsharma231@gmail.com"
+            }
+          },
+          "roleActions": [
+            {
+              "role": {
+                "crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                "displayName": "Manager",
+                "description": "As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources."
+              },
+              "actions": [
+                {
+                  "action": "POST /conversation",
+                  "displayName": "POST",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.skill.read",
+                  "displayName": "Can open and view a skill.",
+                  "description": "Can open and view a skill."
+                },
+                {
+                  "action": "conversation.assistant.write",
+                  "displayName": "Can rename, edit, or delete an assistant.",
+                  "description": "Can rename, edit, or delete an assistant."
+                },
+                {
+                  "action": "PUT /conversation",
+                  "displayName": "PUT",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.assistant.default",
+                  "displayName": "Default access for Assistant",
+                  "description": "Default access for Assistant"
+                },
+                {
+                  "action": "PATCH /conversation",
+                  "displayName": "PATCH",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.assistant.list",
+                  "displayName": "Can list assistant or skill",
+                  "description": "Can list assistant or skill"
+                },
+                {
+                  "action": "conversation.assistant.legacy",
+                  "displayName": "Can perform authoring methods for a workspace through v1 APIs.",
+                  "description": "Can perform authoring methods for a workspace through v1 APIs."
+                },
+                {
+                  "action": "conversation.logs.read",
+                  "displayName": "Can view skill analytics and access user conversation logs.",
+                  "description": "Can view skill analytics and access user conversation logs."
+                },
+                {
+                  "action": "GET /conversation",
+                  "displayName": "GET",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.skill.write",
+                  "displayName": "Can rename, edit, or delete a skill.",
+                  "description": "Can rename, edit, or delete a skill."
+                },
+                {
+                  "action": "DELETE /conversation",
+                  "displayName": "DELETE",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.assistant.read",
+                  "displayName": "Can open and view an assistant.",
+                  "description": "Can open and view an assistant."
+                }
+              ],
+              "policyIds": [
+                "https://cloud.ibm.com/iam/users/IBMid-5500073VNW/policies/ab8a55ce-702a-42d6-aacd-0e0ad32cc09f"
+              ]
+            }
+          ],
+          "platformExtensions": {
+            "roleActions": [
+              {
+                "role": {
+                  "crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                  "displayName": "Manager",
+                  "description": "As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources."
+                },
+                "actions": [
+                  {
+                    "action": "global-search-tagging.resource.read",
+                    "displayName": "Find cloud resources",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.read",
+                    "displayName": "IAM Policy Read",
+                    "description": "The ability to see policies."
+                  }
+                ],
+                "policyIds": [
+                  "https://cloud.ibm.com/iam/users/IBMid-5500073VNW/policies/ab8a55ce-702a-42d6-aacd-0e0ad32cc09f"
+                ]
+              },
+              {
+                "role": {
+                  "crn": "crn:v1:bluemix:public:iam::::role:Administrator",
+                  "displayName": "Administrator",
+                  "description": "As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users."
+                },
+                "actions": [
+                  {
+                    "action": "resource-controller.key.delete",
+                    "displayName": "Resource Key Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "global-search-tagging.resource.read",
+                    "displayName": "Find cloud resources",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.update",
+                    "displayName": "IAM Policy Update",
+                    "description": "The ability to update or edit existing policies."
+                  },
+                  {
+                    "action": "resource-controller.instance.create",
+                    "displayName": "Resource Instance Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.key.retrieve",
+                    "displayName": "Resource Key Retrieve ",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.role.read",
+                    "displayName": "IAM Role Read",
+                    "description": "The ability to see roles."
+                  },
+                  {
+                    "action": "resource-controller.alias.retrieve",
+                    "displayName": "Resource Alias Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.group.retrieve",
+                    "displayName": "Resource Group Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.create",
+                    "displayName": "IAM Policy Create",
+                    "description": "The ability to create policies."
+                  },
+                  {
+                    "action": "resource-controller.key.update",
+                    "displayName": "Resource Key Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.retrieve",
+                    "displayName": "Resource Instance Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.quota.retrieve",
+                    "displayName": "Quota Definitions Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.broker.retrieve",
+                    "displayName": "Resource Broker Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.key.create",
+                    "displayName": "Resource Key Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "global-search-tagging.tag.attach-user-tag",
+                    "displayName": "Attach tag",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.delegationPolicy.create",
+                    "displayName": "IAM Delegation policy Create",
+                    "description": "The ability to create a policy that can be delegated to another service."
+                  },
+                  {
+                    "action": "resource-controller.alias.create",
+                    "displayName": "Resource Alias Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.retrieve_history",
+                    "displayName": "Resource Instance Retrieve History",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.delete",
+                    "displayName": "IAM Policy Delete",
+                    "description": "The ability to delete existing policies."
+                  },
+                  {
+                    "action": "iam.service.read",
+                    "displayName": "IAM Service Read",
+                    "description": "The ability to see services."
+                  },
+                  {
+                    "action": "iam.role.assign",
+                    "displayName": "IAM Role Assign",
+                    "description": "The ability to assign roles to policies."
+                  },
+                  {
+                    "action": "resource-controller.group.update",
+                    "displayName": "Resource Group Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.group.delete",
+                    "displayName": "Resource Group Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.alias.delete",
+                    "displayName": "Resource Alias Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.read",
+                    "displayName": "IAM Policy Read",
+                    "description": "The ability to see policies."
+                  },
+                  {
+                    "action": "resource-controller.broker.update",
+                    "displayName": "Resource Broker Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.broker.delete",
+                    "displayName": "Resource Broker Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.binding.update",
+                    "displayName": "Resource Binding Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "global-search-tagging.tag.detach-user-tag",
+                    "displayName": "Detach tag",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.binding.create",
+                    "displayName": "Resource Binding Create ",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.update",
+                    "displayName": "Resource Instance Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.alias.update",
+                    "displayName": "Resource Alias Update ",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.group.create",
+                    "displayName": "Resource Group Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.binding.delete",
+                    "displayName": "Resource Binding Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.binding.retrieve",
+                    "displayName": "Resource Binding Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.broker.create",
+                    "displayName": "Resource Broker Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.update_plan",
+                    "displayName": "Resource Instance Update Plan",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.delete",
+                    "displayName": "Resource Instance Delete",
+                    "description": ""
+                  }
+                ],
+                "policyIds": [
+                  "https://cloud.ibm.com/iam/users/IBMid-5500073VNW/policies/ab8a55ce-702a-42d6-aacd-0e0ad32cc09f"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "subject": {
+            "serviceId": {
+              "id": "iam-ServiceId-e6fad9f2-7744-4a3e-a019-feb95532f5df",
+              "displayName": "1cf4ef53-8f1e-40e5-8fb4-cb3154fe77bc"
+            }
+          },
+          "roleActions": [
+            {
+              "role": {
+                "crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+                "displayName": "Writer",
+                "description": "As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources."
+              },
+              "actions": [
+                {
+                  "action": "POST /conversation",
+                  "displayName": "POST",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.skill.read",
+                  "displayName": "Can open and view a skill.",
+                  "description": "Can open and view a skill."
+                },
+                {
+                  "action": "PATCH /conversation",
+                  "displayName": "PATCH",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.assistant.list",
+                  "displayName": "Can list assistant or skill",
+                  "description": "Can list assistant or skill"
+                },
+                {
+                  "action": "conversation.assistant.write",
+                  "displayName": "Can rename, edit, or delete an assistant.",
+                  "description": "Can rename, edit, or delete an assistant."
+                },
+                {
+                  "action": "GET /conversation",
+                  "displayName": "GET",
+                  "description": ""
+                },
+                {
+                  "action": "PUT /conversation",
+                  "displayName": "PUT",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.assistant.default",
+                  "displayName": "Default access for Assistant",
+                  "description": "Default access for Assistant"
+                },
+                {
+                  "action": "conversation.skill.write",
+                  "displayName": "Can rename, edit, or delete a skill.",
+                  "description": "Can rename, edit, or delete a skill."
+                },
+                {
+                  "action": "DELETE /conversation",
+                  "displayName": "DELETE",
+                  "description": ""
+                },
+                {
+                  "action": "conversation.assistant.read",
+                  "displayName": "Can open and view an assistant.",
+                  "description": "Can open and view an assistant."
+                }
+              ],
+              "policyIds": [
+                "https://cloud.ibm.com/iam/serviceids/ServiceId-e6fad9f2-7744-4a3e-a019-feb95532f5df/policies/36fe573a-d0de-465f-b62b-fde74dc25240"
+              ]
+            }
+          ],
+          "platformExtensions": {
+            "roleActions": [
+              {
+                "role": {
+                  "crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+                  "displayName": "Writer",
+                  "description": "As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources."
+                },
+                "actions": [
+                  {
+                    "action": "global-search-tagging.resource.read",
+                    "displayName": "Find cloud resources",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.read",
+                    "displayName": "IAM Policy Read",
+                    "description": "The ability to see policies."
+                  }
+                ],
+                "policyIds": [
+                  "https://cloud.ibm.com/iam/serviceids/ServiceId-e6fad9f2-7744-4a3e-a019-feb95532f5df/policies/36fe573a-d0de-465f-b62b-fde74dc25240"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
