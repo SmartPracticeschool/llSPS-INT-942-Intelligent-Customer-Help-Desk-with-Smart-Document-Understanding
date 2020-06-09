@@ -21,8 +21,8 @@ Build a web application with integration to all these services & deploy the same
 
 In Watson Discovery I have added ecobee3_userguide. 
 
-I have uploaded a demo video of this project in my youtube channel.
-https://youtu.be/3ZL_BuPTXZ0
+I have uploaded a demo video of this project in my google drive.
+https://drive.google.com/file/d/1ULstz8skxXLnaCDV-Q7j2quiTVEj5hda/view?usp=sharing
 
 Node_Red Dasboard link after deploying : https://node-red-hhzbi.eu-gb.mybluemix.net/ui
 
